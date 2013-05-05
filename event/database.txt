@@ -1,0 +1,16 @@
+createdb calendar;
+
+CREATE TABLE events (
+id serial PRIMARY KEY,
+title text NOT NULL,
+content text NOT NULL,
+status text,
+category text,
+start_time timestamp,
+end_time timestamp,
+create_by text,
+create_at timestamp not null default current_timestamp,
+update_by text,
+update_at timestamp
+);
+

@@ -1,0 +1,58 @@
+
+#container{
+	margin:20px;
+	padding:20px;
+}
+h2 {font-family: 'Neucha', cursive;}
+
+#nichi {
+	width:40px;
+}
+.nichi {
+	font-family: 'Neucha',cursive;
+}
+
+.nichi > a {
+	font-size: 150%;
+}
+
+#youbi {
+	width:40px;
+}
+
+#jikan {
+	width:100px;
+}
+
+.holiday {
+	color:red;
+}
+
+.trouble {
+	color:red;
+}
+
+.plan {
+	color:blue;
+}
+
+.shuchi {
+	color:purple;
+}
+
+.memo {
+	color:#a9a9a9;
+}
+
+.event_close {
+	text-decoration:line-through;
+}
+
+.left {
+	text-align:right;
+}
+
+.copyright {
+	color:gray;
+	font-style: italic;
+}
