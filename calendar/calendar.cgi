@@ -52,37 +52,16 @@ EOM
 ######## HTML start ######
 print $HTML_header;
 print <<EOM;
-<div id = "container">
+<div class="container">
 EOM
 print $obj->h2("${calendar_title}");
 
-##tile
-print <<EOM;
-<div class="row">
-  <div class="span2">
-  <ul class="thumbnails">
-  <li class="span3 tile tile-teal">
-  <a href="calendar.cgi?year=${prev_year}&month=${prev_month}" ><h1>HOME</h1></a>
-  ${year}年${month}月
-  </li>
-  </ul>
-  </div>
-  <div class="span4">
-  <ul class="thumbnails">
-  <li class="span3 tile tile-double tile-orange">
-  <a href="calendar.cgi?year=${next_year}&month=${next_month}" ><h1 class="tile-text">calendar</h1></a>
-  </li>
-  </ul>
-  </div>
-EOM
-
-
 ###  form
 print <<EOM;
-  <div class="sapn3">
-  <form class="form-horizontal" action="calendar.cgi" method="post">
-    <div class="control-group">
-    <select class="span2" name = "year">
+  <div class="sapn4">
+    <form class="form-horizontal" action="calendar.cgi" method="post">
+      <div class="control-group">
+        <select class="span2" name = "year">
 EOM
 
 ## 年
@@ -116,6 +95,24 @@ print <<EOM;
     </div>
   </form>
   </div>
+	<div class="span8"></div>
+EOM
+
+# next prev link
+print <<EOM;
+<div class="row">
+	<div class="span4">
+		<ul class="pager">
+			<li class="previous">
+				<a href="calendar.cgi?year=${prev_year}&month=${prev_month}">&larr; Prev</a>
+			</li>
+			<span>${year}年${month}月</span>
+			<li class="next">
+				<a href="calendar.cgi?year=${next_year}&month=${next_month}">Next &rarr;</a>
+			</li>
+		</ul>
+	</div>
+	<div class="span8"></div>
 </div>
 EOM
 
