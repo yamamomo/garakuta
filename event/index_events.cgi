@@ -105,7 +105,7 @@ print <<EOM;
 <th>category</th>
 <th>start</th>
 <th>end</th>
-<th>起票者</th>
+<th>作成者</th>
 <th>更新者</th>
 </tr>
 </thead>

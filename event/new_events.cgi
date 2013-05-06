@@ -80,11 +80,10 @@ print <<EOM;
 EOM
 
 print $obj->textfield(
-		    -name=>'title',
-		    -default=>"",
-		    #-size=>64,
-		    -class=>"span6",
-		);
+	-name=>'title',
+	-default=>"",
+	-class=>"span6",
+);
 
 print <<EOM;
 </td>
@@ -98,11 +97,11 @@ print <<EOM;
 EOM
 
 print $obj->scrolling_list(
-		    -name=>'status',
-		    -default=>"open",
-                    -values=>Event_Status_Array(),
-		    -size=>1,
-		);
+	-name=>'status',
+	-default=>"open",
+	-values=>Event_Status_Array(),
+	-size=>1,
+);
 
 print <<EOM;
 </td>
@@ -116,11 +115,11 @@ print <<EOM;
 EOM
 
 print $obj->scrolling_list(
-                    -name=>'category',
-                    -default=>"",
-		    -values=>Event_Category_Array(),
-                    -size=>1,
-                );
+	-name=>'category',
+	-default=>"",
+	-values=>Event_Category_Array(),
+	-size=>1,
+);
 
 print <<EOM;
 </td>
@@ -136,56 +135,56 @@ EOM
 
 #
 print $obj->scrolling_list(
--name=>'start_year',
--values=>Nen_List("$year_end"),
--default=>["$year"],
--class=>"span1",
--onChange=>"setEmptyStart(this)",
--size=>1,
+	-name=>'start_year',
+	-values=>Nen_List("$year_end"),
+	-default=>["$year"],
+	-class=>"span2",
+	-onChange=>"setEmptyStart(this)",
+	-size=>1,
 );
 
 print "<span>年</span>";
 
 #
 print $obj->scrolling_list(
--name=>'start_month',
--values=>Seq_num(1,12),
--default=>["$month"],
--class=>"span1",
--size=>1,
+	-name=>'start_month',
+	-values=>Seq_num(1,12),
+	-default=>["$month"],
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span2>月</span>";
 
 #
 print $obj->scrolling_list(
--name=>'start_day',
--values=>Seq_num(1,31),
--default=>["$day"],
--class=>"span1",
--size=>1,
+	-name=>'start_day',
+	-values=>Seq_num(1,31),
+	-default=>["$day"],
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>日</span>";
 
 #
 print $obj->scrolling_list(
--name=>'start_jikan',
--values=>Seq_num(0,23),
--default=>["$t_hour"],
--class=>"span1",
--size=>1,
+	-name=>'start_jikan',
+	-values=>Seq_num(0,23),
+	-default=>["$t_hour"],
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>時</span>";
 
 #
 print $obj->scrolling_list(
--name=>'start_min',
--values=>Seq_num(0,59,5),
--default=>[''],
--class=>"span1",
--size=>1,
+	-name=>'start_min',
+	-values=>Seq_num(0,59,5),
+	-default=>[''],
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>分</span>";
@@ -204,56 +203,56 @@ EOM
 
 #
 print $obj->scrolling_list(
--name=>'end_year',
--values=>Nen_List("${year_end}"),
--default=>[''],
--class=>"span1",
--onChange=>"setEmptyEnd(this)",
--size=>1,
+	-name=>'end_year',
+	-values=>Nen_List("${year_end}"),
+	-default=>[''],
+	-class=>"span2",
+	-onChange=>"setEmptyEnd(this)",
+	-size=>1,
 );
 
 print "<span>年</span>";
 
 #
 print $obj->scrolling_list(
--name=>'end_month',
--values=>Seq_num(1,12),
--default=>[''],
--class=>"span1",
--size=>1,
+	-name=>'end_month',
+	-values=>Seq_num(1,12),
+	-default=>[''],
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span2>月</span>";
 
 #
 print $obj->scrolling_list(
--name=>'end_day',
--values=>Seq_num(1,31),
--default=>[''],
--class=>"span1",
--size=>1,
+	-name=>'end_day',
+	-values=>Seq_num(1,31),
+	-default=>[''],
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>日</span>";
 
 #
 print $obj->scrolling_list(
--name=>'end_jikan',
--values=>Seq_num(0,23),
--default=>[''],
--class=>"span1",
--size=>1,
+	-name=>'end_jikan',
+	-values=>Seq_num(0,23),
+	-default=>[''],
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>時</span>";
 
 #
 print $obj->scrolling_list(
--name=>'end_min',
--values=>Seq_num(0,59,5),
--default=>[''],
--class=>"span1",
--size=>1,
+	-name=>'end_min',
+	-values=>Seq_num(0,59,5),
+	-default=>[''],
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>分</span>";
@@ -272,11 +271,11 @@ print <<EOM;
 EOM
 
 print $obj->textarea(
-                    -name=>'content',
-                    -default=>"",
-                    -rows=>15,
-		    -class=>"span6",
-                );
+	-name=>'content',
+	-default=>"",
+	-rows=>15,
+	-class=>"span6",
+);
 
 print <<EOM;
 </td>
@@ -290,10 +289,10 @@ print <<EOM;
 EOM
 
 print $obj->textfield(
-                    -name=>'create_by',
-                    -default=>"your name",
-                    -size=>24,
-                );
+	-name=>'create_by',
+	-default=>"your name",
+	-size=>24,
+);
 
 print <<EOM;
 </td>

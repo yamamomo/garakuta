@@ -1,4 +1,9 @@
 
+
+body {
+	font-size:14px;
+}
+
 #container{
 	margin:20px;
 	padding:20px;
@@ -26,6 +31,7 @@ h2 {font-family: 'Neucha', cursive;}
 
 .holiday {
 	color:red;
+	font-size:12px;
 }
 
 .trouble {

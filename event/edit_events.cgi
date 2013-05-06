@@ -109,11 +109,10 @@ print <<EOM;
 EOM
 
 print $obj->textfield(
-		    -name=>'title',
-		    -default=>"$title",
-		    #-size=>64,
-		    -class=>"span6",
-		);
+	-name=>'title',
+	-default=>"$title",
+	-class=>"span6",
+);
 
 print <<EOM;
 </td>
@@ -127,11 +126,11 @@ print <<EOM;
 EOM
 
 print $obj->scrolling_list(
-		    -name=>'status',
-		    -default=>"$status",
-                    -values=>Event_Status_Array(),
-		    -size=>1,
-		);
+	-name=>'status',
+	-default=>"$status",
+	-values=>Event_Status_Array(),
+	-size=>1,
+);
 
 print <<EOM;
 </td>
@@ -145,11 +144,11 @@ print <<EOM;
 EOM
 
 print $obj->scrolling_list(
-                    -name=>'category',
-                    -default=>"$category",
-		    -values=>Event_Category_Array(),
-                    -size=>1,
-                );
+	-name=>'category',
+	-default=>"$category",
+	-values=>Event_Category_Array(),
+	-size=>1,
+);
 
 print <<EOM;
 </td>
@@ -165,56 +164,56 @@ EOM
 
 #
 print $obj->scrolling_list(
--name=>'start_year',
--values=>Nen_List("$year_end"),
--default=>"$start_year",
--onChange=>"setEmptyStart(this)",
--class=>"span1",
--size=>1,
+	-name=>'start_year',
+	-values=>Nen_List("$year_end"),
+	-default=>"$start_year",
+	-onChange=>"setEmptyStart(this)",
+	-class=>"span2",
+	-size=>1,
 );
 
 print "<span>年</span>";
 
 #
 print $obj->scrolling_list(
--name=>'start_month',
--values=>Seq_num(1,12),
--default=>"$start_month",
--class=>"span1",
--size=>1,
+	-name=>'start_month',
+	-values=>Seq_num(1,12),
+	-default=>"$start_month",
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span2>月</span>";
 
 #
 print $obj->scrolling_list(
--name=>'start_day',
--values=>Seq_num(1,31),
--default=>"$start_day",
--class=>"span1",
--size=>1,
+	-name=>'start_day',
+	-values=>Seq_num(1,31),
+	-default=>"$start_day",
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>日</span>";
 
 #
 print $obj->scrolling_list(
--name=>'start_jikan',
--values=>Seq_num(0,23),
--default=>"$start_jikan",
--class=>"span1",
--size=>1,
+	-name=>'start_jikan',
+	-values=>Seq_num(0,23),
+	-default=>"$start_jikan",
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>時</span>";
 
 #
 print $obj->scrolling_list(
--name=>'start_min',
--values=>Seq_num(0,59,5),
--default=>"$start_min",
--class=>"span1",
--size=>1,
+	-name=>'start_min',
+	-values=>Seq_num(0,59,5),
+	-default=>"$start_min",
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>分</span>";
@@ -233,56 +232,56 @@ EOM
 
 #
 print $obj->scrolling_list(
--name=>'end_year',
--values=>Nen_List("${year_end}"),
--default=>"$end_year",
--class=>"span1",
--onChange=>"setEmptyEnd(this)",
--size=>1,
+	-name=>'end_year',
+	-values=>Nen_List("${year_end}"),
+	-default=>"$end_year",
+	-class=>"span2",
+	-onChange=>"setEmptyEnd(this)",
+	-size=>1,
 );
 
 print "<span>年</span>";
 
 #
 print $obj->scrolling_list(
--name=>'end_month',
--values=>Seq_num(1,12),
--default=>"$end_month",
--class=>"span1",
--size=>1,
+	-name=>'end_month',
+	-values=>Seq_num(1,12),
+	-default=>"$end_month",
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span2>月</span>";
 
 #
 print $obj->scrolling_list(
--name=>'end_day',
--values=>Seq_num(1,31),
--default=>"$end_day",
--class=>"span1",
--size=>1,
+	-name=>'end_day',
+	-values=>Seq_num(1,31),
+	-default=>"$end_day",
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>日</span>";
 
 #
 print $obj->scrolling_list(
--name=>'end_jikan',
--values=>Seq_num(0,23),
--default=>"$end_jikan",
--class=>"span1",
--size=>1,
+	-name=>'end_jikan',
+	-values=>Seq_num(0,23),
+	-default=>"$end_jikan",
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>時</span>";
 
 #
 print $obj->scrolling_list(
--name=>'end_min',
--values=>Seq_num(0,59,5),
--default=>"$end_min",
--class=>"span1",
--size=>1,
+	-name=>'end_min',
+	-values=>Seq_num(0,59,5),
+	-default=>"$end_min",
+	-class=>"span1",
+	-size=>1,
 );
 
 print "<span>分</span>";
@@ -301,11 +300,11 @@ print <<EOM;
 EOM
 
 print $obj->textarea(
-                    -name=>'content',
-                    -default=>"$content",
-                    -rows=>15,
-		    -class=>"span6",
-                );
+	-name=>'content',
+	-default=>"$content",
+	-rows=>15,
+	-class=>"span6",
+);
 
 print <<EOM;
 </td>
@@ -319,10 +318,10 @@ print <<EOM;
 EOM
 
 print $obj->textfield(
-                    -name=>'update_by',
-                    -default=>"$update_by",
-                    -size=>24,
-                );
+	-name=>'update_by',
+	-default=>"$update_by",
+	-size=>24,
+);
 
 print <<EOM;
 </td>

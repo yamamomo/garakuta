@@ -82,7 +82,7 @@ print <<EOM;
   <div class="sapn3">
   <form class="form-horizontal" action="calendar.cgi" method="post">
     <div class="control-group">
-    <select class="span1" name = "year">
+    <select class="span2" name = "year">
 EOM
 
 ## 年
