@@ -83,7 +83,7 @@ print $obj->h3("${event_title} 一覧");
 print <<EOM;
 <form class="form-search" action="index_events.cgi" method="post">
 <input type="text" class="input-medium search-query" name="search_word">
-<button type="submit" class="btn-small btn-info">Search</button>
+<button type="submit" class="btn-small btn-info"><i class="icon-search icon-white"></i>Search</button>
 </form>
 EOM
 

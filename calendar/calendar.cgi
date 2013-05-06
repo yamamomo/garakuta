@@ -104,11 +104,11 @@ print <<EOM;
 	<div class="span4">
 		<ul class="pager">
 			<li class="previous">
-				<a href="calendar.cgi?year=${prev_year}&month=${prev_month}">&larr; Prev</a>
+				<a href="calendar.cgi?year=${prev_year}&month=${prev_month}"><i class="icon-chevron-left"></i> Prev</a>
 			</li>
 			<span>${year}年${month}月</span>
 			<li class="next">
-				<a href="calendar.cgi?year=${next_year}&month=${next_month}">Next &rarr;</a>
+				<a href="calendar.cgi?year=${next_year}&month=${next_month}">Next <i class="icon-chevron-right"></i></a>
 			</li>
 		</ul>
 	</div>
