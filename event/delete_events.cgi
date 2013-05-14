@@ -79,7 +79,7 @@ sub delete_event {
 ######## HTML start ######
 print $HTML_header;
 print <<EOM;
-<div id = "container">
+<div class="container">
 EOM
 
 print $obj->h3('T-WAN EVENT');
