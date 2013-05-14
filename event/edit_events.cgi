@@ -70,7 +70,7 @@ $sth->execute($id);
 print $HTML_header;
 
 print <<EOM;
-<div id = "container">
+<div class="container">
 EOM
 print $obj->h3("${event_title} 編集");
 
@@ -111,7 +111,7 @@ EOM
 print $obj->textfield(
 	-name=>'title',
 	-default=>"$title",
-	-class=>"span6",
+	-class=>"span8",
 );
 
 print <<EOM;
@@ -303,7 +303,7 @@ print $obj->textarea(
 	-name=>'content',
 	-default=>"$content",
 	-rows=>15,
-	-class=>"span6",
+	-class=>"span8",
 );
 
 print <<EOM;

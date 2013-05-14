@@ -67,7 +67,7 @@ $sth->execute($id);
 print $HTML_header;
 
 print <<EOM;
-<div id = "container">
+<div class="container">
 EOM
 print $obj->h3("${event_title} 詳細");
 
@@ -96,7 +96,7 @@ print "<table>";
 print <<EOM;
 <tr>
 <th>*タイトル</th>
-<td class = "span6">$title</td>
+<td class="span8">$title</td>
 </tr>
 EOM
 

@@ -54,7 +54,7 @@ EOM
 print $HTML_header;
 
 print <<EOM;
-<div id = "container">
+<div class="container">
 EOM
 print $obj->h3("${event_title}新規");
 
@@ -82,7 +82,7 @@ EOM
 print $obj->textfield(
 	-name=>'title',
 	-default=>"",
-	-class=>"span6",
+	-class=>"span8",
 );
 
 print <<EOM;
@@ -274,7 +274,7 @@ print $obj->textarea(
 	-name=>'content',
 	-default=>"",
 	-rows=>15,
-	-class=>"span6",
+	-class=>"span8",
 );
 
 print <<EOM;
