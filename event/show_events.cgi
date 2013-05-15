@@ -154,7 +154,7 @@ EOM
 
 ### 編集画面へのリンク
 print <<EOM;   
-<a href="edit_events.cgi?id=${id}">[編集]</a>
+<a class="btn btn-success" href="edit_events.cgi?id=${id}"><i class="icon-edit icon-white"></i>&nbsp;編集</a>
 EOM
 
 # footer
